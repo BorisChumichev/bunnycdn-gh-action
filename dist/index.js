@@ -9648,7 +9648,7 @@ function purgeZone(zoneId, zoneKey) {
             "AccessKey": zoneKey,
         }
     }).then(response => {
-        if (response.status === 200) {
+        if (response.status === 204) {
             core_1.info(`Cache purged`);
         }
         else if (response.status === 401) {
